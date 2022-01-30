@@ -1,4 +1,4 @@
-import { Card, Fab } from "@mui/material";
+import { Card } from "@mui/material";
 import React from "react";
 import {FaLocationArrow} from 'react-icons/fa';
 import {BiTimeFive} from 'react-icons/bi';
@@ -13,7 +13,8 @@ export default function Today() {
 
 
   return (
-    <Card sx={{margin:'1rem',boxSizing:'border-box',borderRadius:'2rem',backgroundColor:'#19C3FB',color:'#E3F4FE'}}>
+    <div>
+<Card sx={{margin:'1rem',boxSizing:'border-box',borderRadius:'2rem',backgroundColor:'#1D71F2',color:'#E3F4FE'}}>
       <div style={{ display: "flex" }}>
         <img
           src="http://openweathermap.org/img/wn/10d@4x.png"
@@ -26,9 +27,18 @@ export default function Today() {
       </div>
       <div className="today-main">Clouds</div>
       <div className="today-description">scattered clouds</div>
+    </Card>
+    <Card sx={{margin:'1rem',boxSizing:'border-box',borderRadius:'2rem',backgroundColor:'#1D71F2',color:'#E3F4FE'}}>
       <div className="today-location"><FaLocationArrow/> AKURESSA, SRILANKA</div>
+    </Card>
+
+    <Card sx={{margin:'1rem',boxSizing:'border-box',borderRadius:'2rem',backgroundColor:'#1D71F2',color:'#E3F4FE'}}>
       <div className="today-time"><BiTimeFive/> {`${time.hours} : ${time.minutes} ${time.amPm}`}</div>
       <div className="today-date"><BsFillCalendarDateFill/> {`${date.day} ${date.month} ${date.year} `}</div>
     </Card>
+    </div>
+    
+
+    
   );
 }

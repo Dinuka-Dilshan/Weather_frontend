@@ -1,5 +1,6 @@
 import "./App.css";
-import Today from '../src/UI/Today'
+import Today from '../src/UI/Today';
+import Dashboard from "./UI/Dashboard";
 
 function App() {
   return (
@@ -7,7 +8,9 @@ function App() {
       <div className="app-left">
         <Today/>
       </div>
-      <div className="app-right"></div>
+      <div className="app-right">
+        <Dashboard/>
+      </div>
     </div>
   );
 }

@@ -20,7 +20,8 @@ const Time = () => {
       let hours = new Date().getHours();
 
       const amPm = hours<12?'AM':'PM';
-      hours = hours > 12 ? `0${hours - 12}` : hours;
+      hours = hours > 12 ? `${hours - 12}` : hours;
+      hours = hours < 10 ? `0${hours}` : hours;
 
       let minutes = new Date().getMinutes();
       minutes = minutes < 10 ? `0${minutes}` : minutes;

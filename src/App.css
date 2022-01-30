@@ -8,20 +8,28 @@
 .app-left {
   width: 25%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .app-right {
   width: 75%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
   .app-left {
     width: 100%;
+    display: block;
   }
 
   .app-right {
     width: 100%;
+    display: block;
   }
 
   .app-wrapper {
