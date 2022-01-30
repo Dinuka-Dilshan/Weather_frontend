@@ -1,0 +1,48 @@
+.today-img {
+  width: 50%;
+}
+
+.today-temperature{
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.today-main{
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-left: 3rem;
+}
+
+.today-description{
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-left: 3rem;
+  padding-bottom: 1rem;
+}
+
+.today-location{
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-left: 3rem;
+  padding-top: 5rem;
+}
+
+.today-time{
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-left: 3rem;
+  padding-top: 0.3rem;
+}
+
+.today-date{
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-left: 3rem;
+  
+  padding-bottom: 1rem;
+  padding-top: 0.3rem;
+}
+
+
